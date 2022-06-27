@@ -8,18 +8,17 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace Functions
+namespace MealPlanner.Functions
 {
     public static class GetRecipes
     {
         [FunctionName("GetRecipes")]
-        public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
-            ILogger log)
+        public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req, ILogger log)
         {
-            log.LogInformation("** GetRecipes **");
+            var responseMessage = "** GetRecipes **";
 
-            var responseMessage = "** List of recipes **";
+            log.LogInformation(responseMessage);
+
             return new OkObjectResult(responseMessage);
         }
     }
