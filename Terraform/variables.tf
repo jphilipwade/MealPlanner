@@ -14,7 +14,7 @@ variable "location" {
 variable "environment" {
   type        = string
   description = "Environment"
-  default     = "dev"
+  default     = "pw"
 }
 
 
@@ -32,4 +32,14 @@ variable "storage_account_prefix" {
 variable "app_insights_prefix" {
   type    = string
   default = "ai"
+}
+
+variable "app_service_plan_prefix" {
+  type    = string
+  default = "asp"
+}
+
+variable "function_app_prefix" {
+  type    = string
+  default = "fa"
 }
