@@ -43,3 +43,9 @@ variable "function_app_prefix" {
   type    = string
   default = "fa"
 }
+
+variable "container_prefix" {
+  type    = string
+  default = "c"
+}
+

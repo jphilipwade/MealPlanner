@@ -1,0 +1,22 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cleanBuildDirectory": "rimraf build",
+    "makeBuildDirectory": "mkdirp --mode=0700 build",
+    "build": "run-s dotnetbuild package",
+    "dotnetbuild": "dotnet build --configuration Release /p:DeployOnBuild=true /p:DeployTarget=Package;CreatePackageOnPublish=true",
+    "package": "jszip-cli",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@ffflorian/jszip-cli": "^3.1.6",
+    "jszip-cli": "^1.4.24",
+    "npm-run-all": "^4.1.5"
+  }
+}

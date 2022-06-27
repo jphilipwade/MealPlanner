@@ -270,3 +270,5 @@ __pycache__/
 /Terraform/.terraform/
 /Terraform/.terraform.*
 
+/Api/build/*.zip
+/build/**

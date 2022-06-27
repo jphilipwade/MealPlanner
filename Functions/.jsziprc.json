@@ -1,0 +1,12 @@
+{
+  "compressionLevel": 9,
+  "dereferenceLinks": true,
+  "entries": [
+    "./bin/Release/net6.0/publish/."
+  ],
+  "force": true,
+  "mode": "add",
+  "outputEntry": "../build/functions.zip",
+  "quiet": false,
+  "verbose": false
+}
